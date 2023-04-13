@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint PSTAlertController.podspec' to ensure this is a
+# Be sure to run `pod lib lint PSTUIAlertController.podspec' to ensure this is a
 # valid spec and remove all comments before submitting the spec.
 #
 # Any lines starting with a # are optional, but encouraged
@@ -8,22 +8,22 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "PSTAlertController"
-  s.version          = "1.2.0"
-  s.summary          = "API similar to UIAlertController, backwards compatible to iOS 7. Will use the new shiny API when you run iOS 8. "
+  s.name             = "PSTUIAlertController"
+  s.version          = "1.3.0"
+  s.summary          = "API similar to UIAlertController, backwards compatible to iOS 16. Will use the new shiny API when you run iOS 16. "
   s.description      = <<-DESC
-                       We cheat a bit by having PSTAlertController superclass be NSObject, but for most use cases it's still a lot more convenient than using UIAlertView/UIActionSheet.
+                       We cheat a bit by having PSTUIAlertController superclass be NSObject, but for most use cases it's still a lot more convenient than using UIAlertView/UIActionSheet.
                        DESC
-  s.homepage         = "https://github.com/steipete/PSTAlertController"
+  s.homepage         = "https://github.com/adilyousufofficial/PSTUIAlertController"
   s.license          = 'MIT'
-  s.author           = { "Peter Steinberger" => "steipete@gmail.com" }
-  s.source           = { :git => "https://github.com/steipete/PSTAlertController.git", :tag => s.version.to_s }
+  s.author           = { "Muhammad Adil" => "adilyousufofficial@gmail.com" }
+  s.source           = { :git => "https://github.com/adilyousufofficial/PSTUIAlertController.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/steipete'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '16.0'
   s.requires_arc = true
 
-  s.source_files = 'PSTAlertController'
-  s.public_header_files = 'PSTAlertController/**/*.h'
+  s.source_files = 'PSTUIAlertController'
+  s.public_header_files = 'PSTUIAlertController/**/*.h'
   s.frameworks = 'UIKit'
 end
